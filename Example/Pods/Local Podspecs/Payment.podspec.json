@@ -1,0 +1,44 @@
+{
+  "name": "Payment",
+  "version": "0.1.0",
+  "summary": "Fuck Payment.",
+  "description": "Fuck Payment....",
+  "homepage": "https://github.com/lzc1104/Payment",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lzc1104": "527004184@QQ.COM"
+  },
+  "source": {
+    "git": "https://github.com/lzc1104/Payment.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Payment/*",
+  "subspecs": [
+    {
+      "name": "Alipay",
+      "vendored_frameworks": "Payment/Alipay/*.framework",
+      "source_files": "Payment/Alipay/*",
+      "public_header_files": "Payment/Alipay/*.h",
+      "frameworks": [
+        "UIKit",
+        "CoreTelephony",
+        "SystemConfiguration",
+        "QuartzCore",
+        "CoreText",
+        "CoreGraphics",
+        "CFNetwork",
+        "CoreMotion"
+      ],
+      "libraries": [
+        "c++",
+        "z"
+      ]
+    }
+  ]
+}

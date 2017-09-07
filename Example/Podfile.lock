@@ -1,0 +1,18 @@
+PODS:
+  - Payment (0.1.0):
+    - Payment/Alipay (= 0.1.0)
+  - Payment/Alipay (0.1.0)
+
+DEPENDENCIES:
+  - Payment (from `../`)
+
+EXTERNAL SOURCES:
+  Payment:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Payment: 663447a34c262aa717e1102e1bb3c927a77d025d
+
+PODFILE CHECKSUM: 4ee39b6e3be2fcf53646c6584847432c453f66be
+
+COCOAPODS: 1.2.1
