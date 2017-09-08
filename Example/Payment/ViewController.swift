@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     @IBAction func alipay(_ sender: Any) {
         //RESERVER
         //此处的模板为 观赛日支付模板
-        let req = PaymentManagers.AlipayRequest(urlString : "",scheme: "")
+        let req = PaymentManagers.AlipayRequest(payOrderString : "",scheme: "")
         let order = PaymentManagers.Order.alipay(req: req)
         
         PaymentManagers.deliver(order, completionHandler: { result in

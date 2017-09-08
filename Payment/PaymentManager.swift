@@ -104,7 +104,7 @@ open class PaymentManagers {
     public struct AlipayRequest {
         
         /// api返回的签名字符串
-        var urlString: String
+        var payOrderString: String
         
         /// xproj 中为alipay 注册的 URLtype , 需保持一致，不然跳不回来
         var scheme: String
@@ -119,8 +119,8 @@ open class PaymentManagers {
             return urlString
         }
         
-        public init(urlString: String , scheme: String) {
-            self.urlString = urlString
+        public init(payOrderString: String , scheme: String) {
+            self.payOrderString = payOrderString
             self.scheme = scheme
         }
     }
@@ -303,7 +303,7 @@ open class PaymentManagers {
         case .alipay(let requestBody):
             ///custom scheme
             self.shared.customAlipayOrderScheme = requestBody.scheme
-            self.shared.alipayManager.deliver(requestBody.urlString, scheme: requestBody.scheme, callback: nil)
+            self.shared.alipayManager.deliver(requestBody.payOrderString, scheme: requestBody.scheme, callback: nil)
         }
         
     }
